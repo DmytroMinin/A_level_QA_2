@@ -19,6 +19,7 @@ public class PageObjectLessons extends BaseTest {
 
     @Test(invocationCount = 10)
     public void deleteItemFormBucketTest(){
+        LogInPage logInPage = new LogInPage(driver);
         System.setProperty("webdriver.chrome.driver", "chromedriver1.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://rozetka.com.ua/");

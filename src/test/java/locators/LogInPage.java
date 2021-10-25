@@ -18,7 +18,7 @@ public class LogInPage extends BasePage{
     private WebElement inputButton;
 
     public LogInPage(WebDriver driver) {
-        super(driver, LogInPage.class);
+        super(driver);
     }
 
     public MainPage logIn(String login, String password) {

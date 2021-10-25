@@ -13,16 +13,13 @@ import java.io.FileReader;
 public class BaseTest {
     WebDriver driver;
     LogInPage loginPage;
+    LogInPage login;
 
     @BeforeClass
     public void setUp() throws FileNotFoundException {
-        File file = new File("sdasdasd");
-        FileReader reader = new FileReader(file);
-        ChromeOptions options = new ChromeOptions();
-        System.setProperty("webdriver.chrome.driver", "chromedriver1.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        LogInPage login = new LogInPage(driver);
+        login = new LogInPage(driver);
     }
 
     @AfterClass

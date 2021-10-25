@@ -1,8 +1,7 @@
 package listeners;
 
-import org.testng.ISuite;
-import org.testng.ITestListener;
+import org.testng.ISuiteListener;
 
-public class MyListener  {
+public class MyListener implements ISuiteListener {
 
 }
