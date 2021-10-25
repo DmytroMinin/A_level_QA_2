@@ -1,3 +1,5 @@
+package testng;
+
 import org.openqa.selenium.WebDriver;
 
 public class DriverProvider {

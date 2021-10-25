@@ -1,4 +1,4 @@
-package conditions;
+package testng.conditions;
 
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 import org.openqa.selenium.By;

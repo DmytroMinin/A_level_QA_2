@@ -1,11 +1,13 @@
+package testng;
+
 import com.codeborne.selenide.*;
-import driverproviders.MyDriver;
-import locators.BasePage;
+import testng.driverproviders.MyDriver;
+import testng.locators.BasePage;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.*;
-import static locators.SelenidePage.logIn;
+import static testng.locators.SelenidePage.logIn;
 
 public class SelenideTest {
 

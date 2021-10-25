@@ -1,4 +1,4 @@
-package listeners;
+package testng;
 
 import org.testng.IClassListener;
 import org.testng.ITestClass;

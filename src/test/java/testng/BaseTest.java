@@ -1,15 +1,12 @@
-import locators.LogInPage;
+package testng;
+
+import testng.locators.LogInPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 
 public class BaseTest {
     WebDriver driver;

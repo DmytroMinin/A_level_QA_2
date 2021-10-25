@@ -1,4 +1,4 @@
-package driverproviders;
+package testng.driverproviders;
 
 import com.codeborne.selenide.WebDriverProvider;
 import org.openqa.selenium.WebDriver;

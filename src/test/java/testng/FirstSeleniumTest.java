@@ -1,4 +1,7 @@
-import conditions.ElementDisplayedCondition;
+package testng;
+
+import junit.User;
+import org.testng.annotations.*;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,11 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class FirstSeleniumTest extends BaseTest{
@@ -48,7 +48,6 @@ public class FirstSeleniumTest extends BaseTest{
 
     @Test
     public void firstSeleniumTest() {
-        waiter.until(new ElementDisplayedCondition());
         var inputField = waiter.until(ExpectedConditions
                 .presenceOfElementLocated(By.xpath("/html/body/app-root/div/div/rz-header/header/div/div/div/form/div/div/input")));
         //WebElement inputField = driver.findElement(By.xpath("/html/body/app-root/div/div/rz-header/header/div/div/div/form/div/div/input"));

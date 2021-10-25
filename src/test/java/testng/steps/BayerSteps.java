@@ -1,4 +1,4 @@
-package steps;
+package testng.steps;
 
 public class BayerSteps {
 

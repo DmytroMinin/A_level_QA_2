@@ -1,4 +1,6 @@
-import locators.LogInPage;
+package testng;
+
+import testng.locators.LogInPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

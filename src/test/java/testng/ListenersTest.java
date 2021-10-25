@@ -1,9 +1,7 @@
-import listeners.MyGroupListener;
-import listeners.MyListener;
-import listeners.MyTestListener;
+package testng;
+
 import org.testng.Assert;
 import org.testng.ITestContext;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 

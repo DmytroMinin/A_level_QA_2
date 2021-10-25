@@ -1,4 +1,4 @@
-package locators;
+package testng.locators;
 
 public class MainPage{
 
