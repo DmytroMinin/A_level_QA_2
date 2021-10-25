@@ -6,6 +6,7 @@ import org.testng.ISuiteListener;
 import java.time.LocalDate;
 
 public class MyListener implements ISuiteListener {
+
     @Override
     public void onStart(ISuite suite) {
         System.out.println(suite.getName());

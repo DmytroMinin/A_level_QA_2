@@ -9,6 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import javax.annotation.Nonnull;
 
 public class MyDriver implements WebDriverProvider {
+
     @Nonnull
     @Override
     public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
