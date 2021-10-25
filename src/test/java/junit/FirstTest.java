@@ -18,11 +18,7 @@ public class FirstTest extends BaseTest{
         System.out.println("beforeAll");
     }
 
-    @Tag("noFastTest")
-    @Tag("fastTest")
-    @ExtendWith(MyExtensions.class)
     @FastTest
-    @Test
     public void firstTest(User user){
         System.out.println(user.getName());
         System.out.println("firstTest");
