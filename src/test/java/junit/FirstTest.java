@@ -1,11 +1,14 @@
 package junit;
 
 import junit.extenssions.MyExtensions;
+import junit.extenssions.UserInjectResolver;
 import junit.extenssions.UserResolver;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith(UserResolver.class)
+import java.util.List;
+
+@ExtendWith(UserInjectResolver.class)
 public class FirstTest extends BaseTest{
 
     @BeforeEach
@@ -19,8 +22,10 @@ public class FirstTest extends BaseTest{
     }
 
     @FastTest
-    public void firstTest(User user){
-        System.out.println(user.getName());
+    @UserInject
+    public void firstTest(List<User> user){
+        System.out.println(user.get(0).getName());
+        System.out.println(user.get(1).getName());
         System.out.println("firstTest");
     }
 
